@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: radikal ;
+    src: url('./fonts/Radikal/Nootype\ -\ Radikal\ Bold.otf');
+}
+@font-face {
+    font-family: radikal-light;
+    src: url('./fonts/Radikal/Nootype\ -\ Radikal\ Light.otf');
+}
+@font-face {
+    font-family: radikal-medium ;
+    src: url('./fonts/Radikal/Nootype\ -\ Radikal\ Medium.otf');
+}
+@font-face {
+    font-family: radikal-thin;
+    src: url('./fonts/Radikal/Nootype\ -\ Radikal\ Thin.otf');
+}
+body{
+    font-family: radikal ;
+    overflow-x: hidden;
+    width: 100vw;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+.description{width: 50%;}
+.card-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+h1{
+    width: 50%;
+    margin-top: 2rem;
+}
+.card{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.card img{
+    width: 100%;
+    border-radius: 2%;
+}
+p{
+    font-family: radikal-thin ;
+    font-size: 1.2rem;
+}
+h1 span{
+    color: gray;
+}
+@media screen and (max-width: 900px){
+    .card{
+        width: 70%;
+    }
+    h1{
+        width: 70%;
+    }
+    .description{width: 70%;}
+}
+@media screen and (max-width: 600px){
+    .card{
+        width: 90%;
+    }
+    h1{
+        width: 90%;
+    }
+    .description{width: 90%;}
+}
